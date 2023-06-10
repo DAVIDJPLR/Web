@@ -1,6 +1,9 @@
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -9,6 +12,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Collection;
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 public class Web {
 
@@ -115,6 +119,17 @@ public class Web {
             WebElement element = driver.findElement((By.id(ID)));
             Web.type(driver, element, content);
         }
+    }
+
+    public static RemoteWebDriver chrome(int implicitWait){
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+
+        RemoteWebDriver driver = new ChromeDriver(options);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
+
+        return driver;
     }
 
     public static void hitEnter (WebDriver driver){
