@@ -19,6 +19,10 @@ public class Web {
     private static final int LONG = 5;
     private static final int SHORT = 2;
 
+    private Web(){
+        
+    }
+
     class xPath {
         public static void click (WebDriver driver, String xPath){
             WebElement element = driver.findElement((By.xpath(xPath)));
