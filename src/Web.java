@@ -20,10 +20,14 @@ public class Web {
     private static final int SHORT = 2;
 
     private Web(){
-        
+
     }
 
     class xPath {
+
+        private xPath(){
+
+        }
         public static void click (WebDriver driver, String xPath){
             WebElement element = driver.findElement((By.xpath(xPath)));
             Web.click(driver, element);
@@ -67,14 +71,18 @@ public class Web {
                 return false;
             }
         }
-    }
 
-    public static void type (WebDriver driver, String xPath, String content){
-        WebElement element = driver.findElement((By.xpath(xPath)));
-        Web.type(driver, element, content);
+        public static void type (WebDriver driver, String xPath, String content){
+            WebElement element = driver.findElement((By.xpath(xPath)));
+            Web.type(driver, element, content);
+        }
     }
 
     class ID {
+        private ID(){
+
+        }
+
         public static void click (WebDriver driver, String ID){
             WebElement element = driver.findElement((By.id(ID)));
             Web.click(driver, element);
