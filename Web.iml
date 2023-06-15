@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../Selenium-Java-4.10.0/lib/async-http-client-2.12.3.jar!/" />
@@ -93,7 +93,7 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-tests.jar!/" />
@@ -105,6 +105,64 @@
         <SOURCES>
           <root url="jar://$MODULE_DIR$/../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-sources.jar!/" />
           <root url="jar://$MODULE_DIR$/../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="Selenium-Java-4.10.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-api-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-chrome-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-chromium-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v85-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v112-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v113-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v114-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-edge-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-firefox-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-http-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-ie-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-java-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-json-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-manager-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-remote-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-safari-driver-4.10.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-support-4.10.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-api-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-chrome-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-chromium-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v85-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v112-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v113-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-devtools-v114-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-edge-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-firefox-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-http-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-ie-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-json-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-manager-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-remote-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-safari-driver-4.10.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Selenium-Java-4.10.0/selenium-support-4.10.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-tests.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../Apache-Commons/commons-io-2.11.0-bin/commons-io-2.11.0/commons-io-2.11.0-test-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
