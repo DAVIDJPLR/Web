@@ -76,6 +76,27 @@ public class Web {
             WebElement element = driver.findElement((By.xpath(xPath)));
             Web.type(driver, element, content);
         }
+
+        public static int findFrame(WebDriver driver, String xPath){
+            boolean found = false;
+
+            int size = driver.findElements(By.tagName("iframe")).size();
+
+            int i = 0;
+            while ((i<=size)&&(found == false)){
+                driver.switchTo().frame(i);
+                if ((driver.findElements(By.xpath(xPath)).size())>0){
+                    found = true;
+                }
+                    i++;
+            }
+
+            if (found == true){
+                return i-1;
+            } else{
+                return -1;
+            }
+        }
     }
 
     class ID {
@@ -131,6 +152,27 @@ public class Web {
             WebElement element = driver.findElement((By.id(ID)));
             Web.type(driver, element, content);
         }
+
+        public static int findFrame(WebDriver driver, String ID){
+            boolean found = false;
+
+            int size = driver.findElements(By.tagName("iframe")).size();
+
+            int i = 0;
+            while ((i<=size)&&(found == false)){
+                driver.switchTo().frame(i);
+                if ((driver.findElements(By.id(ID)).size())>0){
+                    found = true;
+                }
+                i++;
+            }
+
+            if (found == true){
+                return i-1;
+            } else{
+                return -1;
+            }
+        }
     }
 
     public static RemoteWebDriver chrome(int implicitWait){
@@ -177,6 +219,18 @@ public class Web {
         boolean out = Web.takeScreenshot(driver, savePath);
         js.executeScript("document.body.style.zoom='100%'");
         return out;
+    }
+
+    public static void toFrame (WebDriver driver, int frame){
+        driver.switchTo().frame(frame);
+    }
+
+    public static void defaultContent(WebDriver driver){
+        driver.switchTo().defaultContent();
+    }
+
+    public static void toWindow(WebDriver driver, int window){
+        driver.switchTo().window(driver.getWindowHandles().toArray()[window].toString());
     }
 
     private static void click (WebDriver driver, WebElement element){
