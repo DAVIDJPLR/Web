@@ -67,7 +67,7 @@ public class Web {
             try {
                 Web.xPath.getText(driver, xPath);
                 return true;
-            } catch (NoSuchElementException e){
+            } catch (Exception e){
                 return false;
             }
         }
@@ -143,7 +143,7 @@ public class Web {
             try {
                 Web.ID.getText(driver, ID);
                 return true;
-            } catch (NoSuchElementException e){
+            } catch (Exception e){
                 return false;
             }
         }
