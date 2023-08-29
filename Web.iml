@@ -211,5 +211,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Webdriver Manager" level="project" />
   </component>
 </module>
